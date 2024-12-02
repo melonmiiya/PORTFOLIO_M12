@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+    color: rgb(86, 19, 19);
+    padding: 0;
+    margin: 0 auto;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color:#fff4f4 ;
+    font-family: Futura, sans-serif;
+}
+
+.header-bg {
+background-image: url("./assets/header.png");
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.header-wrap {
+    padding: 100px 20px;
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 1400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+} 
+
+.header-wrap p {
+    flex: 1 0 25%;
+    font-size: 2.5em;
+}
+
+.header-wrap p a {
+    text-decoration: none;
+}
+
+.main-menu {
+    flex: 1 0 75%;
+    display: flex;
+    font-family: Futura, sans-serif;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+ }
+
+.main-menu a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.main-menu a.nav-link.active {
+    border-bottom: 1px solid #fff;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.main-section h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.main-section .about-me img {
+    border-radius: 100%;
+    margin: 0 auto 1.5rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-section p {
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.portfolio .card-holder {
+    display: flex;
+    justify-content: stretch;
+    align-items: start;
+    column-gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolio .card-holder .card {
+    flex: 0 0 30%;
+    background: #fff;
+    padding: 5px;
+    text-align: center;
+    min-height: 345px;
+}
+
+.card-holder .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+ }
+
+.card-holder .card h2 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 1em;
+ }
+ .card-holder .card a {
+    color: #000;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.contact-wrap {
+    text-align: left;
+    
+}
+
+.contact-wrap  form input, .contact-wrap  form textarea {
+    display: block;
+    width: 300px;
+    margin: 0 0 1.5em;
+    padding: 5px;
+    color: #000;
+}
+
+.contact-wrap  form textarea {
+    height: 50px;
+}
+
+.contact-wrap  form input[type="submit"] {
+    width: auto;
+    color: #000;
+    font-size: 18px;
+}
+
+.contact-wrap  form label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.contact-wrap .error-text {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.resume-wrap a {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.resume-wrap ul {
+    padding: 0 0 0 40px;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.footer-wrap {
+    padding: 100px 20px;
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 900px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+} 
+.footer-wrap img {
+    max-width: 100px;
+    height: auto;
+    flex: 0 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .header-wrap, .main-menu, .footer-wrap {
+        flex-direction:column;
+        padding: 5% 10px;
+    }
+    .header-wrap p {
+        margin-bottom: .5em;
+    }
+    .main-menu a, .footer-wrap a {
+        margin-bottom: 1em;
+        display: block;
+    }
+    .main-section {
+        padding: 10px;
+    }
+
+    .portfolio .card-holder .card {
+        flex: 0 0 100%;
+    }
+}
