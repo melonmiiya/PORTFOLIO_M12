@@ -10,7 +10,7 @@ Portfolio Website helps showcase my previous works while excuting my coding skil
 
 Site - 
 
-My Github - https://github.com/melonmiiya/PORTFOLIO_M12
+My Github Link - https://github.com/melonmiiya/PORTFOLIO_M12
 
 ## Credits
 
